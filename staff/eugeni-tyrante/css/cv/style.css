@@ -30,11 +30,11 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-family: sans-serif;
     font-weight: bold;
-    text-align: start; 
-    text-indent: 10px;
+    text-align: center; 
+    text-indent: 5px;
     border-bottom: 6px solid #507DBC;
     background-color: #BBD1EA;
     padding: 1px;
@@ -56,6 +56,30 @@ img {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 2.5px 5px #DAE3E5;
+}
+
+.vida-laboral {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: start; 
+    text-indent: 5px;
+    border-bottom: 6px solid #507DBC;
+    background-color: #BBD1EA;
+    padding: 1px;
+    margin: 1px;
+}
+
+.est-form {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: start; 
+    text-indent: 5px;
+    border-bottom: 6px solid #507DBC;
+    background-color: #BBD1EA;
+    padding: 1px;
+    margin: 1px;
 }
 
 .columna {
@@ -91,13 +115,21 @@ footer {
     font-weight: bold;
     text-align: center;
 }
+
+#sobremi p{
+    list-style: none;
+    text-align: justify;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 7px;
+}
+
 .datos-personales li {
     list-style: none;
     text-align: left;
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     word-spacing: 5px;
-    
 }
 #iconosidioma {
     font-size: 15px;
@@ -119,10 +151,11 @@ p {
 }
 
 #minombre {
-    font-size: 23px;
-    font-family: "Impact", fantasy;
+    font-size: 20px;
+    font-family: "Helbetica", sans-serif;
     text-align: center;
     line-height: 0.1;
+    font-weight: bold;
 }
 
 #mipuesto {
