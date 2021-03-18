@@ -118,11 +118,20 @@ p {
     font-family: "Helbetica", sans-serif;
 }
 
+#sobremi p{
+    list-style: none;
+    text-align: justify;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 7px;
+}
+
 #minombre {
-    font-size: 23px;
-    font-family: "Impact", fantasy;
+    font-size: 20px;
+    font-family: "Helbetica", sans-serif;
     text-align: center;
     line-height: 0.1;
+    font-weight: bold;
 }
 
 #mipuesto {
