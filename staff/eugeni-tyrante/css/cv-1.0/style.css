@@ -117,16 +117,23 @@ footer {
 }
 .datos-personales li {
     list-style: none;
-    text-align: left;
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    word-spacing: 5px;
-    
+    position: relative;
 }
+
 #iconosidioma {
     font-size: 15px;
     /* text-align: justify; */
 }
+
+#iconosdatos {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    bottom: 3px;
+}
+
 .idiomas li {
     list-style: none;
     /* text-align: left; */
@@ -156,6 +163,8 @@ p {
     text-align: center;
     line-height: 0.1;
     font-weight: bold;
+    letter-spacing: -2px;
+    text-shadow: 2px 2px#BBD1EA;
 }
 
 #mipuesto {
@@ -167,6 +176,10 @@ p {
 
 #estudios li{
     list-style: none;
+}
+
+.datos {
+    margin-right: 5px;
 }
 
 .lang {
@@ -181,4 +194,10 @@ p {
     display: inline-block;
     width: 70px;
     text-align: left;
+}
+
+.dato-name {
+    display: inline-block;
+    width: 10px;
+    text-align: center;
 }
