@@ -183,6 +183,15 @@ p {
 
 #estudios li{
     list-style: none;
+    text-align: left;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+#estudios li a {
+    font-weight: bold;
 }
 
 .datos {
@@ -207,4 +216,44 @@ p {
     display: inline-block;
     width: 10px;
     text-align: center;
+}
+
+.logoest img {
+    width: 60px;
+    height: 30px;
+    display: block;
+    margin-left: 2%;
+    box-shadow: 2px 2px #BBD1EA;
+}
+
+.year-est {
+    display: block;
+    text-align: left;
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 1.5%;
+}
+
+#vidalaboral li{
+    list-style: none;
+    text-align: left;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px;
+    margin-right: 1px;
+}
+
+hr.solid {
+    border-top: 1px solid #507DBC;
+    margin-right: 10px;
+}
+
+#vidalaboral li div {
+    column-count: 2;
+    column-gap: 1px;
+}
+
+#vidalaboral li a {
+    font-weight: bold;
 }
