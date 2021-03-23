@@ -249,7 +249,7 @@ hr.solid {
     margin-right: 10px;
 }
 
-#vidalaboral li div {
+.redacciones {
     column-count: 2;
     column-gap: 1px;
 }
