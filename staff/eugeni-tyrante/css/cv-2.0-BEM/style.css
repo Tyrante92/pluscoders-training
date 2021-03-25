@@ -1,0 +1,259 @@
+body {
+    margin: 13px auto;
+    padding: 13px;
+    text-align: left;
+    background: gray;    
+}
+
+.rectangle {
+    height: 30px;
+    width: auto;
+    background-color: #507DBC;
+  }
+
+.learn {
+    width: 800px;
+    height: auto;
+    padding: 10px;
+    border: solid 1px whitesmoke;
+    background-color: whitesmoke;
+    margin: auto;
+    box-shadow: 5px 10px;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: "Helbetica", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px#BBD1EA;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center; 
+    text-indent: 5px;
+    border-bottom: 6px solid #507DBC;
+    background-color: #BBD1EA;
+    padding: 1px;
+    margin: 1px;
+}
+
+h3 {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: start;
+    line-height: 0.1;
+}
+
+.est-form {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: start; 
+    text-indent: 5px;
+    border-bottom: 6px solid #507DBC;
+    background-color: #BBD1EA;
+    padding: 1px;
+    margin: 1px;
+}
+
+.vida-laboral {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: start; 
+    text-indent: 5px;
+    border-bottom: 6px solid #507DBC;
+    background-color: #BBD1EA;
+    padding: 1px;
+    margin: 1px;
+}
+
+img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2.5px 5px #DAE3E5;
+}
+
+.columna {
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+.izquierda {
+    width: 32%;
+}
+
+.derecha {
+    width: 68%;
+}
+
+.learn:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section {
+    border: 1px solid #DAE3E5;
+    padding: 5px;
+    margin: 10px;
+    background: #DAE3E5;
+}
+
+footer {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.datos-personales li {
+    list-style: none;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
+#iconosidioma {
+    font-size: 15px;
+    /* text-align: justify; */
+}
+
+#iconosdatos {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    bottom: 3px;
+}
+
+#iconosh2 {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    bottom: 3px;
+}
+
+.idiomas li {
+    list-style: none;
+    /* text-align: left; */
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+    font-family: "Helbetica", sans-serif;
+}
+
+p {
+    font-family: "Helbetica", sans-serif;
+}
+
+#sobremi p{
+    list-style: none;
+    text-align: justify;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 7px;
+}
+
+#minombre {
+    font-size: 20px;
+    font-family: "Helbetica", sans-serif;
+    text-align: center;
+    line-height: 0.1;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-shadow: 2px 2px#BBD1EA;
+}
+
+#mipuesto {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    line-height: 0.01;
+}
+
+#estudios li{
+    list-style: none;
+    text-align: left;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+#estudios li a {
+    font-weight: bold;
+}
+
+.datos {
+    margin-right: 5px;
+}
+
+.lang {
+    text-align: right;
+}
+
+.langs {
+    margin-right: 50px;
+}
+
+.lang-name {
+    display: inline-block;
+    width: 70px;
+    text-align: left;
+}
+
+.dato-name {
+    display: inline-block;
+    width: 10px;
+    text-align: center;
+}
+
+.logoest img {
+    width: 60px;
+    height: 30px;
+    display: block;
+    margin-left: 2%;
+    box-shadow: 2px 2px #BBD1EA;
+}
+
+.year-est {
+    display: block;
+    text-align: left;
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 1.5%;
+}
+
+#vidalaboral li{
+    list-style: none;
+    text-align: left;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px;
+    margin-right: 1px;
+}
+
+hr.solid {
+    border-top: 1px solid #507DBC;
+    margin-right: 10px;
+}
+
+.redacciones {
+    column-count: 2;
+    column-gap: 1px;
+}
+
+#vidalaboral li a {
+    font-weight: bold;
+}
