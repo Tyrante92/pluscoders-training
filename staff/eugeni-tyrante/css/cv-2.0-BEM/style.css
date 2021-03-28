@@ -4,14 +4,7 @@ body {
     text-align: left;
     background: gray;    
 }
-
-.rectangle {
-    height: 30px;
-    width: auto;
-    background-color: #507DBC;
-  }
-
-.learn {
+.background {
     width: 800px;
     height: auto;
     padding: 10px;
@@ -20,6 +13,12 @@ body {
     margin: auto;
     box-shadow: 5px 10px;
 }
+
+.rectangle {
+    height: 30px;
+    width: auto;
+    background-color: #507DBC;
+  }
 
 h1 {
     font-size: 35px;
