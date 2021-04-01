@@ -4,26 +4,26 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="background">
-        <div class="rectangle"></div>
-        <div class="columna izquierda">
+    <div class="page">
+        <div class="bar"></div>
+        <div class="column column--left">
             <header>
                 <h1>Curriculum Vitae</h1>
             </header>
-            <picture id="portrait">
+            <picture>
                 <source media="(min-width: 650px)" srcset="images/portrait.webp">
                 <source media="(min-width: 465px)" srcset="images/portrait.webp">
-                <img src="images/portrait.webp">
+                <img class="portrait" src="images/portrait.webp">
             </picture>
-            <h4 id="minombre">Eugeni Muñoz</h4>
-            <h5 id="mipuesto">Futuro web Developer</h5>
-            <section id="sobremi">
-                <h2><i id="iconosh2" class="material-icons">description</i>Sobre mí</h2>
+            <h4 class="name">Eugeni Muñoz</h4>
+            <h5 class="job">Futuro web Developer</h5>
+            <section class="about-me">
+                <h2><i class="material-icons">description</i>Sobre mí</h2>
                 <p>
                     La mayor parte de mi tiempo libre lo empleo en mis aficiones como el cine, los videojuegos, la
                     lectura
@@ -35,55 +35,58 @@
                     Pepito Grillo.
                 </p>
             </section>
-            <section class="datos-personales">
-                <h2><i id="iconosh2" class="material-icons">contacts</i> Datos personales </h2>
-                <ul class="datos">
-                    <li><i id="iconosdatos" class="material-icons">cake</i><span class="dato-name"></span>28 años</li>
-                    <li><i id="iconosdatos" class="material-icons">home</i><span class="dato-name"></span>Cardedeu</li>
-                    <li><i id="iconosdatos" class="material-icons">perm_phone_msg</i><span
-                            class="dato-name"></span>630.18.63.93</li>
-                    <li><i id="iconosdatos" class="material-icons">email</i><span class="dato-name"></span><a
+            <section class="personal-data">
+                <h2><i class="material-icons">contacts</i> Datos personales </h2>
+                <ul class="icon-data">
+                    <li><i class="icon-data__item material-icons">cake</i>28 años</li>
+                    <li><i class="icon-data__item material-icons">home</i>Cardedeu</li>
+                    <li><i class="icon-data__item material-icons">perm_phone_msg</i>630.18.63.93</li>
+                    <li><i class="icon-data__item material-icons">email</i><a
                             href="mailto:eumm1992@gmail.com">eumm1992@gmail.com</a></li>
-                    <li><i id="iconosdatos" class="material-icons">directions_car</i><span class="dato-name"></span>Si /
+                    <li><i class="icon-data__item material-icons">directions_car</i>Si /
                         Permiso B</li>
                 </ul>
             </section>
-            <section class="idiomas">
-                <h2><i id="iconosh2" class="material-icons">language</i> Idiomas</h2>
-                <ul class="langs">
-                    <li class="lang"><span class="lang-name">Español</span><i id="iconosidioma"
-                            class="material-icons">lens</i><i id="iconosidioma" class="material-icons">lens</i><i
-                            id="iconosidioma" class="material-icons">lens</i><i id="iconosidioma"
-                            class="material-icons">lens</i></li>
-                    <li class="lang"><span class="lang-name">Catalán</span><i id="iconosidioma"
-                            class="material-icons">lens</i><i id="iconosidioma" class="material-icons">lens</i><i
-                            id="iconosidioma" class="material-icons">lens</i><i id="iconosidioma"
-                            class="material-icons">lens</i></li>
-                    <li class="lang"><span class="lang-name">Inglés</span><i id="iconosidioma"
-                            class="material-icons">lens</i><i id="iconosidioma" class="material-icons">lens</i><i
-                            id="iconosidioma" class="material-icons">lens</i><i id="iconosidioma"
-                            class="material-icons">panorama_fish_eye</i></li>
-                    <li class="lang"><span class="lang-name">Italiano</span><i id="iconosidioma"
-                            class="material-icons">lens</i><i id="iconosidioma"
-                            class="material-icons">panorama_fish_eye</i><i id="iconosidioma"
-                            class="material-icons">panorama_fish_eye</i><i id="iconosidioma"
-                            class="material-icons">panorama_fish_eye</i></li>
-                    <li class="lang"><span class="lang-name">Francés</span><i id="iconosidioma"
-                            class="material-icons">lens</i><i id="iconosidioma"
-                            class="material-icons">panorama_fish_eye</i><i id="iconosidioma"
-                            class="material-icons">panorama_fish_eye</i><i id="iconosidioma"
-                            class="material-icons">panorama_fish_eye</i></li>
+            <section class="languages">
+                <h2><i class="material-icons">language</i> Idiomas</h2>
+                <ul class="score-data">
+                    <li><span class="score-data__item lang">Español</span><i
+                            class="score-data__item score material-icons ">lens</i><i
+                            class="score-data__item score material-icons">lens</i><i
+                            class="score-data__item score material-icons">lens</i><i
+                            class="score-data__item score material-icons">lens</i></li>
+                    <li><span class="score-data__item lang">Catalán</span><i
+                            class="score-data__item score material-icons">lens</i><i
+                            class="score-data__item score material-icons">lens</i><i
+                            class="score-data__item score material-icons">lens</i><i
+                            class="score-data__item score material-icons">lens</i></li>
+                    <li><span class="score-data__item lang">Inglés</span><i
+                            class="score-data__item score material-icons">lens</i><i
+                            class="score-data__item score material-icons">lens</i><i
+                            class="score-data__item score material-icons">lens</i><i
+                            class="score-data__item score material-icons">panorama_fish_eye</i></li>
+                    <li><span class="score-data__item lang">Italiano</span><i
+                            class="score-data__item score material-icons">lens</i><i
+                            class="score-data__item score material-icons">panorama_fish_eye</i><i
+                            class="score-data__item score material-icons">panorama_fish_eye</i><i
+                            class="score-data__item score material-icons">panorama_fish_eye</i>
+                    </li>
+                    <li><span class="score-data__item lang">Francés</span><i
+                            class="score-data__item score material-icons">lens</i><i
+                            class="score-data__item score material-icons">panorama_fish_eye</i><i
+                            class="score-data__item score material-icons">panorama_fish_eye</i><i
+                            class="score-data__item score material-icons">panorama_fish_eye</i>
+                    </li>
                 </ul>
             </section>
         </div>
-        <div class="columna derecha">
-            <section id="estudios">
-                <h2 class="est-form"><i id="iconosh2" class="material-icons">book</i>Estudios y formación académica</h2>
-                <ul>
+        <div class="column column--right">
+            <section>
+                <h2><i class="material-icons">book</i>Estudios y formación académica</h2>
+                <ul class="studies">
 
                     <li>
-                        <picture class="logoest"><img src="images/logoraspall.webp"><span
-                                class="year-est">2004-2010</span>
+                        <picture class="studies__item"><img src="images/logoraspall.webp"><span>2004-2010</span>
                         </picture>Estudios Secundarios Obligadorios y Bachillerato Humanístico-social en <a>IES
                             Arquitecte Manuel
                             Raspall</a> de Cardedeu
@@ -91,36 +94,34 @@
                     <hr class="solid">
 
                     <li>
-                        <picture class="logoest"><img src="images/logocambridge.webp"><span
-                                class="year-est">2010-2011</span></picture>Nivel Pre-First de Inglés certificado en la
+                        <picture class="studies__item"><img src="images/logocambridge.webp"><span>2010-2011</span>
+                        </picture>Nivel Pre-First de Inglés certificado en la
                         <a>Academia Cambridge School</a> de Cardedeu
                     </li>
                     <hr class="solid">
 
                     <li>
-                        <picture class="logoest"><img src="images/logoudg.webp"><span
-                                class="year-est">(2011-2016)</span>
+                        <picture class="studies__item"><img src="images/logoudg.webp"><span>(2011-2016)</span>
                         </picture>Grado Universitario de Comunicación Cultural en <a>Universitat de Girona</a>
                     </li>
                     <hr class="solid">
 
                     <li>
-                        <picture class="logoest"><img src="images/logomediamarkt.webp"><span
-                                class="year-est">2013-2015</span></picture>Formaciones en Hardwere en tecnología móvil e
+                        <picture class="studies__item"><img src="images/logomediamarkt.webp"><span>2013-2015</span>
+                        </picture>Formaciones en Hardwere en tecnología móvil e
                         informática en <a>Media Markt Girona</a>
                     </li>
                     <hr class="solid">
 
                     <li>
-                        <picture class="logoest"><img src="images/logomediamarkt.webp"><span
-                                class="year-est">2017-2018</span></picture>Trabajo con bases de datos en <a>Media Markt
+                        <picture class="studies__item"><img src="images/logomediamarkt.webp"><span>2017-2018</span>
+                        </picture>Trabajo con bases de datos en <a>Media Markt
                             Parets del Vallés</a>
                     </li>
                     <hr class="solid">
 
                     <li>
-                        <picture class="logoest"><img src="images/logomitek.webp"><span
-                                class="year-est">(2018-2020)</span>
+                        <picture class="studies__item"><img src="images/logomitek.webp"><span>(2018-2020)</span>
                         </picture>Formaciones en Verificación de Documentación Legal en <a>Mitek Systems</a> en Parc
                         Tecnològic
                         Cerdanyola del Vallés
@@ -128,7 +129,7 @@
                 </ul>
             </section>
             <section id="vidalaboral">
-                <h2 class="vida-laboral"><i id="iconosh2" class="material-icons">history</i>Vida laboral</h2>
+                <h2 class="vida-laboral"><i class="material-icons">history</i>Vida laboral</h2>
                 <ul>
 
                     <li>
