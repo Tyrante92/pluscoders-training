@@ -163,7 +163,7 @@ i.score {
     width: 60px;
     height: 30px;
     display: block;
-    margin-left: 2%;
+    margin-left: 3%;
     box-shadow: 2px 2px #BBD1EA;
 }
 
@@ -171,21 +171,67 @@ i.score {
     display: block;
     text-align: left;
     font-size: 11px;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-left: 1.5%;
+    margin-left: 3%;
 }
 
-.vida-laboral {
-    font-size: 18px;
+.studies__item--year {
+    display: block;
+    text-align: left;
+    font-size: 11px;
     font-family: sans-serif;
     font-weight: bold;
-    text-align: start; 
-    text-indent: 5px;
-    border-bottom: 6px solid #507DBC;
-    background-color: #BBD1EA;
-    padding: 1px;
-    margin: 1px;
+    margin-left: 3%;
+}
+
+.jobs li{
+    list-style: none;
+    text-align: left;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px;
+    margin-right: 1px;
+}
+
+.job__item img {
+    width: 60px;
+    height: 30px;
+    display: block;
+    margin-left: 3%;
+    box-shadow: 2px 2px #BBD1EA;
+}
+
+.job__item--year {
+    display: block;
+    text-align: left;
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+.jobs li a {
+    font-weight: bold;
+}
+
+.articles {
+    column-count: 2;
+    column-gap: 1px;
+}
+
+.article__item  img {
+    width: 60px;
+    height: 30px;
+    display: block;
+    margin-left: 20%;
+    box-shadow: 2px 2px #BBD1EA;
+}
+
+.article__item--title {
+    display: block;
+    text-align: left;
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 section {
@@ -210,25 +256,7 @@ p {
     font-family: "Helbetica", sans-serif;
 }
 
-#vidalaboral li{
-    list-style: none;
-    text-align: left;
-    font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 6px;
-    margin-right: 1px;
-}
-
 hr.solid {
     border-top: 1px solid #507DBC;
     margin-right: 10px;
-}
-
-.redacciones {
-    column-count: 2;
-    column-gap: 1px;
-}
-
-#vidalaboral li a {
-    font-weight: bold;
 }
