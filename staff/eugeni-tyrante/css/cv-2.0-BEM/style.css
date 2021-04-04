@@ -92,7 +92,7 @@ h2 {
     line-height: 0.01;
 }
 
-.about-me p{
+.brief {
     list-style: none;
     text-align: justify;
     font-size: 12px;
@@ -100,18 +100,18 @@ h2 {
     padding: 7px;
 }
 
-.personal-data li {
+.data-list {
+    margin-right: 5px;
+}
+
+.data-list__item {
     list-style: none;
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
 }
 
-.icon-data {
-    margin-right: 5px;
-}
-
-.icon-data__item {
+.data-list__title {
     font-size: 20px;
     display: inline-block;
     margin-right: .5rem;
@@ -120,30 +120,24 @@ h2 {
     bottom: 3px;
 }
 
-.icon-data__item-name {
-    display: inline-block;
-    width: 10px;
-    text-align: center;
-}
-
-.score-data {
+.score-list {
     margin-right: 50px;
 }
 
-.lang {
+.score-list__title {
     display: inline-block;
     width: 70px;
     text-align: left;
 }
 
-.languages li {
+.score-list__item {
     list-style: none;
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-i.score {
-    font-size: 15px;
+.score-list__point {
+    font-size: 15px !important;
 }
 
 .studies li{
@@ -163,7 +157,6 @@ i.score {
     width: 60px;
     height: 30px;
     display: block;
-    margin-left: 3%;
     box-shadow: 2px 2px #BBD1EA;
 }
 
@@ -174,13 +167,12 @@ i.score {
     margin-left: 3%;
 }
 
-.studies__item--year {
+.studies__item-year {
     display: block;
     text-align: left;
     font-size: 11px;
     font-family: sans-serif;
     font-weight: bold;
-    margin-left: 3%;
 }
 
 .jobs li{
@@ -200,7 +192,7 @@ i.score {
     box-shadow: 2px 2px #BBD1EA;
 }
 
-.job__item--year {
+.job__item-year {
     display: block;
     text-align: left;
     font-size: 11px;
@@ -226,7 +218,7 @@ i.score {
     box-shadow: 2px 2px #BBD1EA;
 }
 
-.article__item--title {
+.article__item-title {
     display: block;
     text-align: left;
     font-size: 11px;
