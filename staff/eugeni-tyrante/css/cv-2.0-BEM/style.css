@@ -140,7 +140,7 @@ h2 {
     font-size: 15px !important;
 }
 
-.studies li{
+.studies li {
     list-style: none;
     text-align: left;
     font-size: 12px;
@@ -149,14 +149,11 @@ h2 {
     margin-right: 10px;
 }
 
-.studies li a {
-    font-weight: bold;
-}
-
-.studies__item img {
+.studies__item-picture {
     width: 60px;
     height: 30px;
     display: block;
+    margin-left: 3%;
     box-shadow: 2px 2px #BBD1EA;
 }
 
@@ -165,6 +162,7 @@ h2 {
     text-align: left;
     font-size: 11px;
     margin-left: 3%;
+    border-bottom: 1px solid #507DBC;
 }
 
 .studies__item-year {
@@ -173,18 +171,20 @@ h2 {
     font-size: 11px;
     font-family: sans-serif;
     font-weight: bold;
+    margin-left: 3%;
 }
 
-.jobs li{
+.jobs__item {
     list-style: none;
     text-align: left;
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 6px;
     margin-right: 1px;
+    border-bottom: 1px solid #507DBC;
 }
 
-.job__item img {
+.jobs__item-picture {
     width: 60px;
     height: 30px;
     display: block;
@@ -192,7 +192,7 @@ h2 {
     box-shadow: 2px 2px #BBD1EA;
 }
 
-.job__item-year {
+.jobs__item-year {
     display: block;
     text-align: left;
     font-size: 11px;
@@ -201,16 +201,18 @@ h2 {
     margin-left: 3%;
 }
 
-.jobs li a {
+.jobs__item-anchor {
     font-weight: bold;
 }
 
 .articles {
+    list-style: none;
     column-count: 2;
     column-gap: 1px;
+    margin: 5px;
 }
 
-.article__item  img {
+.articles__item-picture {
     width: 60px;
     height: 30px;
     display: block;
@@ -218,7 +220,7 @@ h2 {
     box-shadow: 2px 2px #BBD1EA;
 }
 
-.article__item-title {
+.articles__item-title {
     display: block;
     text-align: left;
     font-size: 11px;
@@ -238,17 +240,4 @@ footer {
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
-}
-
-li {
-    font-family: "Helbetica", sans-serif;
-}
-
-p {
-    font-family: "Helbetica", sans-serif;
-}
-
-hr.solid {
-    border-top: 1px solid #507DBC;
-    margin-right: 10px;
 }
