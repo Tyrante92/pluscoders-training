@@ -1,0 +1,59 @@
+body {
+    margin: 13px auto;
+    padding: 13px;
+    text-align: left;
+    background: gray;    
+}
+.chess-board {
+    width: 820px;
+    height: auto;
+    padding: 65px;
+    border: solid 25px #80604D;
+    background-color: #f0e3d0;
+    margin: auto;
+    box-shadow: 10px 10px;
+}
+
+.letters {
+    display: grid;
+    grid-template-columns: 20px repeat(8, 100px);
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: 20px;
+    grid-template-rows: repeat(8, 100px);
+    float: left;
+}
+
+.letters span {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: Roboto, HelveticaNeue, Arial, sans-serif;
+}
+
+.numbers span {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: Roboto, HelveticaNeue, Arial, sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows:  repeat(8, 100px);
+    border-top: solid 1px #80604D;
+    border-right: solid 1px #80604D;
+}
+
+.grid span {
+    padding: 8px 8px;
+    border-left: solid 1px #80604D;
+    border-bottom: solid 1px #80604D;
+}
+
+.black-box {
+    background-color: #80604D;
+} 
