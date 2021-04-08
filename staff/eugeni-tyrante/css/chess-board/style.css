@@ -14,33 +14,32 @@ body {
     box-shadow: 10px 10px;
 }
 
-.letters {
+.chess__board-letters {
     display: grid;
     grid-template-columns: 20px repeat(8, 100px);
 }
 
-.numbers {
+.chess__board-letters span {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: Roboto, HelveticaNeue, Arial, sans-serif;
+}
+
+.chess__board-numbers {
     display: grid;
     grid-template-columns: 20px;
     grid-template-rows: repeat(8, 100px);
     float: left;
 }
-
-.letters span {
+.chess__board-numbers span {
     display: grid;
     justify-content: center;
     align-content: center;
     font-family: Roboto, HelveticaNeue, Arial, sans-serif;
 }
 
-.numbers span {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    font-family: Roboto, HelveticaNeue, Arial, sans-serif;
-}
-
-.grid {
+.chess__board-boxes {
     display: grid;
     grid-template-columns: repeat(8, 100px);
     grid-template-rows:  repeat(8, 100px);
@@ -48,12 +47,12 @@ body {
     border-right: solid 1px #80604D;
 }
 
-.grid span {
+.chess__board-boxes span {
     padding: 8px 8px;
     border-left: solid 1px #80604D;
     border-bottom: solid 1px #80604D;
 }
 
-.black-box {
+.chess__board-boxes--black {
     background-color: #80604D;
 } 
