@@ -1,0 +1,56 @@
+body {
+    margin: auto;
+    background: lightskyblue;
+}
+
+.layout {
+    margin-top: 1vw;
+    display: grid;
+    grid-template-columns: 27.5vw 45vw 27.5vw;
+    grid-template-rows: 95vh 5vh;
+}
+
+.layout__building {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-right: solid 1rem gray;
+    border-top: solid 1rem gray;
+    border-left: solid 1rem gray;
+    background-color: lightgray;
+}
+
+.layout__ground {
+    background-color: green;
+}
+
+.layout__window {
+    width: 4vw;
+    height: 4vh;
+    border-top: solid 0.3rem darkblue;
+    border-right: solid 0.3rem darkblue;
+    background-color: darkcyan;
+    margin-top: 0.5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.layout__invisible {
+    width: 4vw;
+    height: 4vh;
+    margin-top: 0.5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.layout__door {
+    background-color: brown;
+    border-top: solid 0.1rem chocolate;
+    border-right: solid 0.1rem chocolate;
+    align-self: center;
+    width: 4vw;
+    height: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: -1vw;
+}
