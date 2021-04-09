@@ -35,6 +35,20 @@ body {
     margin-right: 3vw;
 }
 
+@media only screen and (max-width: 390px) {
+    .layout__window {
+        margin-left: 0.5vw;
+        margin-right: 0.5w;
+    }
+}
+
+@media only screen and (max-width: 1022px) {
+    .layout__window {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+}
+
 .layout__invisible {
     width: 4vw;
     height: 4vh;
@@ -53,4 +67,4 @@ body {
     margin-left: 3vw;
     margin-right: 3vw;
     margin-bottom: -1vw;
-}
+}  
