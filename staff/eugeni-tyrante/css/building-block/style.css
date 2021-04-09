@@ -3,21 +3,25 @@ body {
     background: lightskyblue;
 }
 
-.layout {
+.scene {
     margin-top: 1vw;
     display: grid;
     grid-template-columns: 27.5vw 45vw 27.5vw;
-    grid-template-rows: 95vh 5vh;
+    grid-template-rows: 95vw 5vw;
 }
 
-@media only screen and (max-width: 390px) {
-    .layout {
+@media only screen and (min-width: 768px) {
+    .scene {
         grid-template-columns: 27.5vw 45vw 27.5vw;
-        grid-template-rows: 95vh 5vh;
+        grid-template-rows: 95vw 5vw;
     }
 }
 
-.layout__building {
+@media only screen and (min-width: 992px) {
+    
+}
+
+.building {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -25,15 +29,16 @@ body {
     border-top: solid 1rem gray;
     border-left: solid 1rem gray;
     background-color: lightgray;
+    min-width: 300px;
 }
 
-.layout__ground {
+.scene__ground {
     background-color: green;
 }
 
-.layout__window {
+.building__window {
     width: 4vw;
-    height: 4vh;
+    height: 4vw;
     border-top: solid 0.3rem darkblue;
     border-right: solid 0.3rem darkblue;
     background-color: darkcyan;
@@ -43,34 +48,34 @@ body {
 }
 
 @media only screen and (max-width: 390px) and (max-width: 1021px) {
-    .layout__window {
+    .building__window {
         margin-left: 1vw;
         margin-right: 1vw;
     }
 }
 
 @media only screen and (max-width: 1022px) {
-    .layout__window {
+    .building__window {
         margin-left: 2vw;
         margin-right: 2vw;
     }
 }
 
-.layout__invisible {
+.building__invisible {
     width: 4vw;
-    height: 4vh;
+    height: 4vw;
     margin-top: 0.5vw;
     margin-left: 3vw;
     margin-right: 3vw;
 }
 
-.layout__door {
+.building__door {
     background-color: brown;
     border-top: solid 0.1rem chocolate;
     border-right: solid 0.1rem chocolate;
     align-self: center;
     width: 4vw;
-    height: 8vh;
+    height: 8vw;
     margin-left: 3vw;
     margin-right: 3vw;
     margin-bottom: -1vw;
