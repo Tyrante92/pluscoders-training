@@ -10,6 +10,13 @@ body {
     grid-template-rows: 95vh 5vh;
 }
 
+@media only screen and (max-width: 390px) {
+    .layout {
+        grid-template-columns: 27.5vw 45vw 27.5vw;
+        grid-template-rows: 95vh 5vh;
+    }
+}
+
 .layout__building {
     display: flex;
     flex-wrap: wrap;
@@ -35,10 +42,10 @@ body {
     margin-right: 3vw;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 390px) and (max-width: 1021px) {
     .layout__window {
-        margin-left: 0.5vw;
-        margin-right: 0.5w;
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 }
 
