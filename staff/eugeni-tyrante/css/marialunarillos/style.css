@@ -1,46 +1,66 @@
 .wrapper {
-    width: 60vw;
-    height: auto;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 20vw);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-  }
-  .one {
-    grid-column: 1;
-    grid-row: 1;
-    border: 1px black solid;
-    background-color: lightgray;
-  }
-  .two {
-    grid-column: 2 / 4;
-    grid-row: 1 / 3;
-    border: 1px black solid;
-    background-color: lightgray;
+  width: 60vw;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  grid-template-rows: repeat(6, 20vw);
+  grid-gap: 1vw;
 }
-  .three {
-    grid-column: 1;
-    grid-row: 2 / 7;
-    border: 1px black solid;
-    background-color: lightgray;
+
+.one {
+  grid-column: 1;
+  grid-row: 1 / 3;
 }
-  .four {
-    grid-column: 3;
-    grid-row: 3;
-    border: 1px black solid;
-    background-color: lightgray;
+
+.two {
+  grid-column: 2 / 4;
+  grid-row: 1;
 }
-  .five {
-    grid-column: 2;
-    grid-row: 4;
-    border: 1px black solid;
-    background-color: lightgray;
+
+.three {
+  grid-column: 2 / 4;
+  grid-row: 2;
 }
-  .six {
-    grid-column: 3;
-    grid-row: 4;
-    border: 1px black solid;
-    background-color: lightgray;
+
+.four {
+  grid-column: 1 / 3;
+  grid-row: 3;
 }
-  
+
+.five {
+  grid-column: 3;
+  grid-row: 3 / 5;
+}
+
+.six {
+  grid-column: 1 / 3;
+  grid-row: 4;
+}
+
+.seven {
+  grid-column: 1;
+  grid-row: 5 / 7;
+}
+
+.eight {
+  grid-column: 2 / 4;
+  grid-row: 5;
+}
+
+.nine {
+  grid-column: 2 / 4;
+  grid-row: 6;
+}
+
+.gokuvertical {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gokuhorizontal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
