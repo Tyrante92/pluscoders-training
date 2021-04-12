@@ -1,6 +1,99 @@
+body {
+  margin: auto;
+}
+
+.navigation {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navigation__icons {
+  float: left;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  transition:0.3s;
+  font-size: 20px;
+  padding: 20;
+}
+
+.main-icons {
+  position: absolute;
+  display: inline;
+  top: -20px;
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 20px;
+  color: gray;
+  border-radius: 0 5px 5px 0;
+}
+
+.main-icons:hover {
+  top: 30px;
+}
+
+.main-icon {
+  padding: 1vw;
+  display: inline;
+  list-style-type: none;
+}
+
+.active-icon {
+  position: relative;
+  display: inline;
+  background-color: orange;
+  color: red;
+  top: 40px;
+  padding: 40px;
+  list-style-type: none;  
+}
+
+.main-icon:hover {
+  background: orange;
+  color: red;
+}
+
+.users {
+  float: right;
+  display: block;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+.sign-in {
+  padding: 0.75vw;
+  display: inline;
+  list-style-type: none;
+}
+
+.sign-up {
+  padding: 0.75vw;
+  display: inline;
+  list-style-type: none;
+}
+
+.sign-up:hover {
+  background: orange;
+  color: red;
+}
+
+.sign-in:hover {
+  background: orange;
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  margin: 2.5vw;
+}
+
 h2 {
   text-align: center;
-  margin: 10vw;
+  margin: 2.5vw;
 }
 
 .layout {
