@@ -21,7 +21,8 @@ body {
   padding: 35px;
   text-decoration: none;
   font-size: 20px;
-  color: gray;
+  color: black;
+  background-color: wheat;
 }
 
 .left-icon {
@@ -32,7 +33,8 @@ body {
   padding: 35px;
   text-decoration: none;
   font-size: 20px;
-  color: gray;
+  color: black;
+  background-color: wheat;
 }
 
 .active-icon {
