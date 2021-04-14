@@ -1,24 +1,89 @@
 body {
   margin: auto;
+  background-color: darkcyan;
 }
 
 .navigation {
   background-color: black;
   position: fixed;
-  display: inline;
+  display: absolute;
   top: 0;
-  width: 100vw;
+  width: 100%;
   padding-left: 100px;
-  height: 2.5vw;
+  height: 25px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hamburguer {
+  transform: translate(1vw, 4vw);
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  background: orange;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  transition: all 1s ease;
+  
+}
+
+.button div {
+  width: 30px;
+  height: 5px;
+  background: red;
+  position: absolute;
+  transition: all 1s ease;
+}
+
+.first {
+  top: 10px;
+  left: 5px;
+
+}
+
+.second {
+  top: 17.5px;
+  left: 5px;
+  
+}
+
+.third {
+  top: 25px;
+  left: 5px;
+  
+}
+
+.button.active .first {
+  transform: translate(0px, 7.5px) rotate(90deg);
+  transition: all 1s ease;
+}
+
+.button.active .second {
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: all 1s ease;
+}
+
+.button.active .third {
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.button.active {
+  border-radius: 50%;
+  transform: rotate(360deg);
+  transition: all 1s ease;
 }
 
 .right-icon {
   position: relative;
-  top: 0px;
-  left: 6vw;
+  top: -3vw;
+  left: 7%;
   transition: 0.3s;
-  padding: 35px;
+  padding-bottom: 5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
   text-decoration: none;
   font-size: 20px;
   color: black;
@@ -27,10 +92,12 @@ body {
 
 .left-icon {
   position: relative;
-  top: 0px;
-  left: 5.5vw;
+  top: -3vw;
+  left: 6%;
   transition: 0.3s;
-  padding: 35px;
+  padding-bottom: 5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
   text-decoration: none;
   font-size: 20px;
   color: black;
@@ -39,44 +106,62 @@ body {
 
 .active-icon {
   position: relative;
-  left: 5vw;
+  left: 5%;
   top: 0px;
-  padding: 55px;
+  padding-bottom: 5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
   text-decoration: none;
   font-size: 20px;
   color: red;
   background-color: orange;
 }
 
+@media screen and (max-width: 465px) {
+  .navigation__icons a:not(:last-child) {display: none;}
+  .navigation__icons a.hamburguer {
+    display: block;
+    position: relative;
+    left: 1%;
+    top: -10px;
+    }
+  }
+
 .left-icon:hover {
   background-color: orange;
   color: red;
-  top: 20px;
+  top: 0vw;
 }
 
 .right-icon:hover {
   background-color: orange;
   color: red;
-  top: 20px;
+  top: 0vw;
+}
+
+.navigation__icons .hamburguer {
+  display: none;
 }
 
 .sign-in {
   display: inline;
-  position: relative;
-  left: 50vw;
-  top: 5px;
+  position: absolute;
+  left: 57.5%;
+  top: 0vw;
   text-decoration: none;
   font-size: 15px;
+  padding: 5px;
   color: gray;
 }
 
 .sign-up {
   display: inline;
-  position: relative;
-  left: 49vw;
-  top: 5px;
+  position: absolute;
+  left: 65%;
+  top: 0vw;
   text-decoration: none;
   font-size: 15px;
+  padding: 5px;
   color: gray;
 }
 
@@ -100,19 +185,10 @@ h2 {
   grid-gap: 1vw;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 465px) {
   .layout {
-    grid-template-columns: repeat(3, 20vw);
-    grid-template-rows: repeat(6, 20vw);
-    grid-gap: 1vw;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .layout {
-    grid-template-columns: repeat(3, 20vw);
-    grid-template-rows: repeat(6, 20vw);
-    grid-gap: 1vw;
+    grid-template-columns: repeat(1, 40vw);
+    grid-template-rows: repeat(9, 20vw);
   }
 }
 
@@ -121,9 +197,23 @@ h2 {
   grid-row: 1 / 3;
 }
 
+@media only screen and (max-width: 465px) {
+.layout__one {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+}
+
 .layout__two {
   grid-column: 2 / 4;
   grid-row: 1;
+}
+
+@media only screen and (max-width: 465px) {
+.layout__two {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
 }
 
 .layout__three {
@@ -131,9 +221,23 @@ h2 {
   grid-row: 2;
 }
 
+@media only screen and (max-width: 465px) {
+.layout__three {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+}
+
 .layout__four {
   grid-column: 1 / 3;
   grid-row: 3;
+}
+
+@media only screen and (max-width: 465px) {
+.layout__four {
+    grid-column: 1 / 3;
+    grid-row: 4;
+  }
 }
 
 .layout__five {
@@ -141,9 +245,23 @@ h2 {
   grid-row: 3 / 5;
 }
 
+@media only screen and (max-width: 465px) {
+.layout__five {
+    grid-column: 1 / 3;
+    grid-row: 5;
+  }
+}
+
 .layout__six {
   grid-column: 1 / 3;
   grid-row: 4;
+}
+
+@media only screen and (max-width: 465px) {
+.layout__six {
+    grid-column: 1 / 3;
+    grid-row: 6;
+  }
 }
 
 .layout__seven {
@@ -151,14 +269,35 @@ h2 {
   grid-row: 5 / 7;
 }
 
+@media only screen and (max-width: 465px) {
+.layout__seven {
+    grid-column: 1 / 3;
+    grid-row: 7;
+  }
+}
+
 .layout__eight {
   grid-column: 2 / 4;
   grid-row: 5;
 }
 
+@media only screen and (max-width: 465px) {
+.layout__eight {
+    grid-column: 1 / 3;
+    grid-row: 8;
+  }
+}
+
 .layout__nine {
   grid-column: 2 / 4;
   grid-row: 6;
+}
+
+@media only screen and (max-width: 465px) {
+.layout__nine {
+    grid-column: 1 / 3;
+    grid-row: 9;
+  }
 }
 
 .gokuvertical {
@@ -183,9 +322,23 @@ h2 {
   grid-gap: 1vw;
 }
 
+@media only screen and (max-width: 465px) {
+  .second-layout {
+    grid-template-columns: repeat(1, 40vw);
+    grid-template-rows: repeat(6, 20vw);
+  }
+}
+
 .second-layout__one {
   grid-column: 1;
   grid-row: 1 / 3;
+}
+
+@media only screen and (max-width: 465px) {
+  .second-layout__one {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
 }
 
 .second-layout__two {
@@ -193,9 +346,23 @@ h2 {
   grid-row: 1;
 }
 
+@media only screen and (max-width: 465px) {
+  .second-layout__two {
+      grid-column: 1 / 3;
+      grid-row: 2;
+    }
+}
+
 .second-layout__three {
   grid-column: 2 / 4;
   grid-row: 2;
+}
+
+@media only screen and (max-width: 465px) {
+  .second-layout__three {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
 }
 
 .second-layout__four {
@@ -203,14 +370,35 @@ h2 {
   grid-row: 3;
 }
 
+@media only screen and (max-width: 465px) {
+  .second-layout__four {
+      grid-column: 1 / 3;
+      grid-row: 4;
+    }
+}
+
 .second-layout__five {
   grid-column: 3;
   grid-row: 3 / 5;
 }
 
+@media only screen and (max-width: 465px) {
+  .second-layout__five {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
+}
+
 .second-layout__six {
   grid-column: 1 / 3;
   grid-row: 4;
+}
+
+@media only screen and (max-width: 465px) {
+  .second-layout__six {
+      grid-column: 1 / 3;
+      grid-row: 6;
+    }
 }
 
 .third-layout {
@@ -223,9 +411,23 @@ h2 {
   grid-gap: 1vw;
 }
 
+@media only screen and (max-width: 465px) {
+  .third-layout {
+    grid-template-columns: repeat(1, 40vw);
+    grid-template-rows: repeat(3, 20vw);
+  }
+}
+
 .third-layout__one {
   grid-column: 1;
   grid-row: 1 / 3;
+}
+
+@media only screen and (max-width: 465px) {
+  .third-layout__one {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
 }
 
 .third-layout__two {
@@ -233,7 +435,21 @@ h2 {
   grid-row: 1;
 }
 
+@media only screen and (max-width: 465px) {
+  .third-layout__two {
+      grid-column: 1 / 3;
+      grid-row: 2;
+    }
+}
+
 .third-layout__three {
   grid-column: 2 / 4;
   grid-row: 2;
+}
+
+@media only screen and (max-width: 465px) {
+  .third-layout__three {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
 }
