@@ -21,13 +21,12 @@
                     <div class="third"></div>
                 </div>
             </a>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
             <script>
-                $(document).ready(function () {
-                    $(".button").click(function () {
-                        $(this).toggleClass("active");
-                    });
-                });
+                var button = document.querySelector(".button")
+                button.addEventListener("click", function (event) {
+                    event.preventDefault()
+                    button.classList.toggle("active")
+                })
             </script>
         </div>
     </nav>
