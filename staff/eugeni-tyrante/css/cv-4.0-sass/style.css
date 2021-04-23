@@ -2,4 +2,309 @@ body {
   background-color: grey;
 }
 
+.page {
+  display: grid;
+  width: 80vw;
+  height: auto;
+  padding: 10px;
+  border: solid 1px whitesmoke;
+  background-color: whitesmoke;
+  margin: auto;
+  box-shadow: 5px 10px;
+}
+@media (min-width: 768px) {
+  .page .page {
+    display: grid;
+    width: 70vw;
+    height: auto;
+    padding: 10px;
+    border: solid 1px whitesmoke;
+    background-color: whitesmoke;
+    margin: auto;
+    box-shadow: 5px 10px;
+  }
+}
+@media (min-width: 992px) {
+  .page .page {
+    display: grid;
+    width: 70vw;
+    height: auto;
+    padding: 1vw;
+    border: solid 1px whitesmoke;
+    background-color: whitesmoke;
+    margin: auto;
+    box-shadow: 5px 10px;
+  }
+}
+
+.material-icons {
+  position: relative;
+  top: 3px;
+  bottom: 3px;
+}
+
+.bar {
+  height: 30px;
+  background-color: #507DBC;
+}
+@media (min-width: 768px) {
+  .bar .bar {
+    height: 30px;
+    width: 243%;
+    background-color: #507DBC;
+  }
+}
+@media (min-width: 992px) {
+  .bar .bar {
+    height: 30px;
+    width: 243%;
+    background-color: #507DBC;
+  }
+}
+
+h1 {
+  font-size: 35px;
+  font-family: "Helbetica", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px #BBD1EA;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-indent: 5px;
+  border-bottom: 6px solid #507DBC;
+  background-color: #BBD1EA;
+  padding: 1px;
+  margin: 1px;
+}
+
+@media (min-width: 768px) {
+  .column--left {
+    display: grid;
+    grid-column: 1;
+    grid-gap: 1vw;
+  }
+
+  .column--right {
+    display: grid;
+    grid-column: 2/4;
+    grid-gap: 1vw;
+  }
+}
+@media (min-width: 992px) {
+  .column--left {
+    display: grid;
+    grid-column: 1;
+    grid-gap: 1vw;
+  }
+
+  .column--right {
+    display: grid;
+    grid-column: 2/4;
+    grid-gap: 1vw;
+  }
+}
+.portrait {
+  width: 40vw;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2.5px 5px #DAE3E5;
+}
+
+@media (min-width: 768px) {
+  .portrait {
+    width: 20vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2.5px 5px #DAE3E5;
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+@media (min-width: 992px) {
+  .portrait {
+    width: 20vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2.5px 5px #DAE3E5;
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+.name {
+  font-size: 20px;
+  font-family: "Helbetica", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px #BBD1EA;
+}
+
+.job {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.brief {
+  list-style: none;
+  text-align: justify;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 7px;
+}
+
+.data-list {
+  margin-right: 5px;
+}
+
+.data-list__item {
+  list-style: none;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+}
+
+.data-list__title {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 3px;
+  bottom: 3px;
+}
+
+.score-list {
+  margin-right: 50px;
+}
+
+.score-list__title {
+  display: inline-block;
+  width: 70px;
+  text-align: left;
+}
+
+.score-list__item {
+  list-style: none;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.score-list__point {
+  font-size: 15px !important;
+}
+
+.studies li {
+  list-style: none;
+  text-align: left;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 6px;
+  margin-right: 10px;
+}
+
+.studies__item-picture {
+  width: 60px;
+  height: 30px;
+  display: block;
+  margin-left: 3%;
+  box-shadow: 2px 2px #BBD1EA;
+}
+
+.studies__item {
+  display: block;
+  text-align: left;
+  font-size: 11px;
+  margin-left: 3%;
+  border-bottom: 1px solid #507DBC;
+}
+
+.studies__item-year {
+  display: block;
+  text-align: left;
+  font-size: 11px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 3%;
+}
+
+.jobs__item {
+  list-style: none;
+  text-align: left;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 6px;
+  margin-right: 1px;
+  border-bottom: 1px solid #507DBC;
+}
+
+.jobs__item-picture {
+  width: 60px;
+  height: 30px;
+  display: block;
+  margin-left: 3%;
+  box-shadow: 2px 2px #BBD1EA;
+}
+
+.jobs__item-year {
+  display: block;
+  text-align: left;
+  font-size: 11px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 3%;
+}
+
+.jobs__item-anchor {
+  font-weight: bold;
+}
+
+.articles {
+  list-style: none;
+  column-count: 2;
+  column-gap: 1px;
+  margin: 5px;
+}
+
+.articles__item-picture {
+  width: 60px;
+  height: 30px;
+  display: block;
+  margin-left: 20%;
+  box-shadow: 2px 2px #BBD1EA;
+}
+
+.articles__item-title {
+  display: block;
+  text-align: left;
+  font-size: 11px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+section {
+  border: 1px solid #DAE3E5;
+  padding: 5px;
+  margin: 10px;
+  background: #DAE3E5;
+}
+
+footer {
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
