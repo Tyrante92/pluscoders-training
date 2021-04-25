@@ -1,5 +1,6 @@
 body
     background-color: grey
+
 .page
     display: grid
     width: 80vw
@@ -9,43 +10,43 @@ body
     background-color: whitesmoke
     margin: auto
     box-shadow: 5px 10px
+
+    &__bar
+        grid-column: 1 / 4
+        height: 30px
+        background-color: #507DBC
+
+    &__column-left
+        grid-column: 1 / 4
+        grid-gap: 1vw
+    &__column-right
+        grid-column: 1 / 4
+        grid-gap: 1vw
+
     @media (min-width: 768px)
-        .page  
-            display: grid
-            width: 70vw
-            height: auto
-            padding: 10px
-            border: solid 1px whitesmoke
-            background-color: whitesmoke
-            margin: auto
-            box-shadow: 5px 10px
+        &__column-left
+            grid-column: 1
+        &__column-right
+            grid-column: 2 / 4
+
     @media (min-width: 992px)
-        .page
-            display: grid
-            width: 70vw
-            height: auto
-            padding: 1vw
-            border: solid 1px whitesmoke
-            background-color: whitesmoke
-            margin: auto
-            box-shadow: 5px 10px
+        &__column-left
+            grid-column: 1
+        &__column-right
+            grid-column: 2 / 4
+
+    &__footer
+        grid-column: 1 / 4
+        font-size: 14px
+        font-family: sans-serif
+        font-weight: bold
+        text-align: center
+
 .material-icons
     position: relative
     top: 3px
     bottom: 3px
-.bar
-    height: 30px
-    background-color: #507DBC
-    @media (min-width: 768px)
-        .bar 
-            height: 30px
-            width: 243%
-            background-color: #507DBC
-    @media (min-width: 992px)
-        .bar
-            height: 30px
-            width: 243%
-            background-color: #507DBC
+
 h1
     font-size: 35px
     font-family: "Helbetica", sans-serif
@@ -62,25 +63,7 @@ h2
     background-color: #BBD1EA
     padding: 1px
     margin: 1px
-@media (min-width: 768px)
-    .column--left
-        display: grid
-        grid-column: 1
-        grid-gap: 1vw
-    .column--right
-        display: grid
-        grid-column: 2 / 4
-        grid-gap: 1vw
 
-@media (min-width: 992px)
-    .column--left
-        display: grid
-        grid-column: 1
-        grid-gap: 1vw
-    .column--right
-        display: grid
-        grid-column: 2 / 4
-        grid-gap: 1vw
 .portrait
     width: 40vw
     height: auto
@@ -88,28 +71,28 @@ h2
     margin-left: auto
     margin-right: auto
     box-shadow: 2.5px 5px #DAE3E5
-@media (min-width: 768px)
-    .portrait
-        width: 20vw
-        height: auto
-        display: block
-        margin-left: auto
-        margin-right: auto
-        box-shadow: 2.5px 5px #DAE3E5
-        display: grid
-        grid-template-columns: repeat(3, 15vw)
-        grid-auto-rows: minmax(100px, auto)
-@media (min-width: 992px)
-    .portrait
-        width: 20vw
-        height: auto
-        display: block
-        margin-left: auto
-        margin-right: auto
-        box-shadow: 2.5px 5px #DAE3E5
-        display: grid
-        grid-template-columns: repeat(3, 15vw)
-        grid-auto-rows: minmax(100px, auto)
+    @media (min-width: 768px)
+        .portrait
+            width: 20vw
+            height: auto
+            display: block
+            margin-left: auto
+            margin-right: auto
+            box-shadow: 2.5px 5px #DAE3E5
+            display: grid
+            grid-template-columns: repeat(3, 15vw)
+            grid-auto-rows: minmax(100px, auto)
+    @media (min-width: 992px)
+        .portrait
+            width: 20vw
+            height: auto
+            display: block
+            margin-left: auto
+            margin-right: auto
+            box-shadow: 2.5px 5px #DAE3E5
+            display: grid
+            grid-template-columns: repeat(3, 15vw)
+            grid-auto-rows: minmax(100px, auto)
 .name
     font-size: 20px
     font-family: "Helbetica", sans-serif
@@ -223,8 +206,3 @@ section
     padding: 5px
     margin: 10px
     background: #DAE3E5
-footer
-    font-size: 14px
-    font-family: sans-serif
-    font-weight: bold
-    text-align: center
