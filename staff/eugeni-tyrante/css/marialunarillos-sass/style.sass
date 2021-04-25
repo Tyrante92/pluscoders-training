@@ -99,12 +99,12 @@ body
   background-color: orange
 
 //@media (max-width: 465px)
-  .navigation__icons a:not(:last-child)display: none
-  .navigation__icons a.hamburger
-    display: block
-    position: relative
-    left: 1%
-    top: -10px
+  //.navigation__icons a:not(:last-child)display: none
+  //.navigation__icons a.hamburger
+    //display: block
+    //position: relative
+    //left: 1%
+    //top: -10px
 
 .left-icon:hover
   background-color: orange
@@ -147,19 +147,23 @@ h2
   text-align: center
   margin: 2.5vw
 
-.mozaic
-  width: 60vw
-  height: auto
-  margin: auto
-  display: grid
-  grid-template-columns: repeat(3, 20vw)
-  grid-template-rows: repeat(6, 20vw)
-  grid-gap: 1vw
+.mozaic__image
+  width: 100%
+  height: 100%
+  object-fit: cover
 
-@media (max-width: 465px)
-  .mozaic
-    grid-template-columns: repeat(1, 40vw)
-    grid-template-rows: repeat(9, 20vw)
+.mozaic
+    width: 60vw
+    height: auto
+    margin: auto
+    display: grid
+    grid-template-columns: repeat(3, 20vw)
+    grid-template-rows: repeat(6, 20vw)
+    grid-gap: 1vw
+    @media (max-width: 465px)
+        .mozaic
+            grid-template-columns: repeat(1, 40vw)
+            grid-template-rows: repeat(9, 20vw)
 
 .mozaic__area-1
   grid-column: 1
@@ -241,11 +245,6 @@ h2
 .mozaic__area-9
     grid-column: 1 / 3
     grid-row: 9
-
-.mozaic__image
-  width: 100%
-  height: 100%
-  object-fit: cover
 
 .mozaic-2
   width: 60vw
