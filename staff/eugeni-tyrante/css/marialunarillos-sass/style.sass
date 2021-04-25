@@ -1,0 +1,367 @@
+body
+  margin: auto
+  background-color: darkcyan
+
+.navigation
+  background-color: black
+  position: fixed
+  display: absolute
+  top: 0
+  width: 100%
+  padding-left: 100px
+  height: 25px
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+.hamburguer
+  transform: translate(1vw, 4vw)
+
+.hamburger__button
+  width: 40px
+  height: 40px
+  position: relative
+  cursor: pointer
+  background: orange
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7)
+  transition: all 1s ease
+
+.hamburger__button div
+  width: 30px
+  height: 5px
+  background: red
+  position: absolute
+  transition: all 1s ease
+
+.hamburger__first
+  top: 10px
+  left: 5px
+
+.hamburger__second
+  top: 17.5px
+  left: 5px
+
+.hamburger__third
+  top: 25px
+  left: 5px
+
+.hamburger__button--active .hamburger__first
+  transform: translate(0px, 7.5px) rotate(90deg)
+  transition: all 1s ease
+
+.hamburger__button--active .hamburger__second
+  transform: translate(0px, 0px) rotate(0deg)
+  transition: all 1s ease
+
+.hamburger__button--active .hamburger__third
+  opacity: 0
+  transition: all 0.2s ease
+
+.hamburger__button--active
+  border-radius: 50%
+  transform: rotate(360deg)
+  transition: all 1s ease
+
+.right-icon
+  position: relative
+  top: -3vw
+  left: 7%
+  transition: 0.3s
+  padding-bottom: 5vw
+  padding-left: 1vw
+  padding-right: 1vw
+  text-decoration: none
+  font-size: 20px
+  color: black
+  background-color: wheat
+
+.left-icon
+  position: relative
+  top: -3vw
+  left: 6%
+  transition: 0.3s
+  padding-bottom: 5vw
+  padding-left: 1vw
+  padding-right: 1vw
+  text-decoration: none
+  font-size: 20px
+  color: black
+  background-color: wheat
+
+.active-icon
+  position: relative
+  left: 5%
+  top: 0px
+  padding-bottom: 5vw
+  padding-left: 1vw
+  padding-right: 1vw
+  text-decoration: none
+  font-size: 20px
+  color: red
+  background-color: orange
+
+//@media (max-width: 465px)
+  .navigation__icons a:not(:last-child)display: none
+  .navigation__icons a.hamburger
+    display: block
+    position: relative
+    left: 1%
+    top: -10px
+
+.left-icon:hover
+  background-color: orange
+  color: red
+  top: 0vw
+
+.right-icon:hover
+  background-color: orange
+  color: red
+  top: 0vw
+
+.navigation__icons .hamburguer
+  display: none
+
+.sign-in
+  display: inline
+  position: absolute
+  left: 57.5%
+  top: 0vw
+  text-decoration: none
+  font-size: 15px
+  padding: 5px
+  color: gray
+
+.sign-up
+  display: inline
+  position: absolute
+  left: 65%
+  top: 0vw
+  text-decoration: none
+  font-size: 15px
+  padding: 5px
+  color: gray
+
+h1
+  text-align: center
+  margin: 2.5vw
+
+h2
+  text-align: center
+  margin: 2.5vw
+
+.mozaic
+  width: 60vw
+  height: auto
+  margin: auto
+  display: grid
+  grid-template-columns: repeat(3, 20vw)
+  grid-template-rows: repeat(6, 20vw)
+  grid-gap: 1vw
+
+@media (max-width: 465px)
+  .mozaic
+    grid-template-columns: repeat(1, 40vw)
+    grid-template-rows: repeat(9, 20vw)
+
+.mozaic__area-1
+  grid-column: 1
+  grid-row: 1 / 3
+
+@media (max-width: 465px)
+.mozaic__area-1
+    grid-column: 1 / 3
+    grid-row: 1
+
+.mozaic__area-2
+  grid-column: 2 / 4
+  grid-row: 1
+
+@media (max-width: 465px)
+.mozaic__area-2
+    grid-column: 1 / 3
+    grid-row: 2
+
+.mozaic__area-3
+  grid-column: 2 / 4
+  grid-row: 2
+
+@media (max-width: 465px)
+.mozaic__area-3
+    grid-column: 1 / 3
+    grid-row: 3
+
+.mozaic__area-4
+  grid-column: 1 / 3
+  grid-row: 3
+
+@media (max-width: 465px)
+.mozaic__area-4
+    grid-column: 1 / 3
+    grid-row: 4
+
+.mozaic__area-5
+  grid-column: 3
+  grid-row: 3 / 5
+
+@media (max-width: 465px)
+.mozaic__area-5
+    grid-column: 1 / 3
+    grid-row: 5
+
+.mozaic__area-6
+  grid-column: 1 / 3
+  grid-row: 4
+
+@media (max-width: 465px)
+.mozaic__area-6
+    grid-column: 1 / 3
+    grid-row: 6
+
+.mozaic__area-7
+  grid-column: 1
+  grid-row: 5 / 7
+
+@media (max-width: 465px)
+.mozaic__area-7
+    grid-column: 1 / 3
+    grid-row: 7
+
+.mozaic__area-8
+  grid-column: 2 / 4
+  grid-row: 5
+
+@media (max-width: 465px)
+.mozaic__area-8
+    grid-column: 1 / 3
+    grid-row: 8
+
+.mozaic__area-9
+  grid-column: 2 / 4
+  grid-row: 6
+
+@media (max-width: 465px)
+.mozaic__area-9
+    grid-column: 1 / 3
+    grid-row: 9
+
+.mozaic__image
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.mozaic-2
+  width: 60vw
+  height: auto
+  margin: auto
+  display: grid
+  grid-template-columns: repeat(3, 20vw)
+  grid-template-rows: repeat(4, 20vw)
+  grid-gap: 1vw
+
+@media (max-width: 465px)
+  .mozaic-2
+    grid-template-columns: repeat(1, 40vw)
+    grid-template-rows: repeat(6, 20vw)
+
+.mozaic-2__area-1
+  grid-column: 1
+  grid-row: 1 / 3
+
+@media (max-width: 465px)
+  .mozaic-2__area-1
+      grid-column: 1 / 3
+      grid-row: 1
+
+.mozaic-2__area-2
+  grid-column: 2 / 4
+  grid-row: 1
+
+@media (max-width: 465px)
+  .mozaic-2__area-2
+      grid-column: 1 / 3
+      grid-row: 2
+
+.mozaic-2__area-3
+  grid-column: 2 / 4
+  grid-row: 2
+
+@media (max-width: 465px)
+  .mozaic-2__area-3
+      grid-column: 1 / 3
+      grid-row: 3
+
+.mozaic-2__area-4
+  grid-column: 1 / 3
+  grid-row: 3
+
+@media (max-width: 465px)
+  .mozaic-2__area-4
+      grid-column: 1 / 3
+      grid-row: 4
+
+.mozaic-2__area-5
+  grid-column: 3
+  grid-row: 3 / 5
+
+@media (max-width: 465px)
+  .mozaic-2__area-5
+      grid-column: 1 / 3
+      grid-row: 5
+
+.mozaic-2__area-6
+  grid-column: 1 / 3
+  grid-row: 4
+
+@media (max-width: 465px)
+  .mozaic-2__area-6
+      grid-column: 1 / 3
+      grid-row: 6
+
+.mozaic-2__image
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.mozaic-3
+  width: 60vw
+  height: auto
+  margin: auto
+  display: grid
+  grid-template-columns: repeat(3, 20vw)
+  grid-template-rows: repeat(2, 20vw)
+  grid-gap: 1vw
+
+@media (max-width: 465px)
+  .mozaic-3
+    grid-template-columns: repeat(1, 40vw)
+    grid-template-rows: repeat(3, 20vw)
+
+.mozaic-3__area-1
+  grid-column: 1
+  grid-row: 1 / 3
+
+@media (max-width: 465px)
+  .mozaic-3__area-1
+      grid-column: 1 / 3
+      grid-row: 1
+
+.mozaic-3__area-2
+  grid-column: 2 / 4
+  grid-row: 1
+
+@media (max-width: 465px)
+  .mozaic-3__area-2
+      grid-column: 1 / 3
+      grid-row: 2
+
+.mozaic-3__area-3
+  grid-column: 2 / 4
+  grid-row: 2
+
+@media (max-width: 465px)
+  .mozaic-3__area-3
+      grid-column: 1 / 3
+      grid-row: 3
+
+.mozaic-3__image
+  width: 100%
+  height: 100%
+  object-fit: cover
