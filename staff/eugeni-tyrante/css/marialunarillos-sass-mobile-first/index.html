@@ -14,18 +14,18 @@
             <a class="navigation__icon right-icon" href="#story">Story</a>
             <a class="navigation__icon sign-up" href="#signup">Sign up</a>
             <a class="navigation__icon sign-in" href="#signin">Sign In</a>
-            <a class="navigation__hamburger hamburger">
-                <div class="hamburger__button">
+            <a class="navigation__hamburger">
+                <div class="hamburger">
                     <div class="hamburger__first"></div>
                     <div class="hamburger__second"></div>
                     <div class="hamburger__third"></div>
                 </div>
             </a>
             <script>
-                var button = document.querySelector(".hamburger__button")
+                var button = document.querySelector(".hamburger")
                 button.addEventListener("click", function (event) {
                     event.preventDefault()
-                    button.classList.toggle("hamburger__button--active")
+                    button.classList.toggle("hamburger--active")
                 })
             </script>
         </div>
