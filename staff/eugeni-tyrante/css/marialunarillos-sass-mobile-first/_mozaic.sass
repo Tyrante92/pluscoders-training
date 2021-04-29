@@ -2,17 +2,25 @@
   grid-column: #{$colfrom} / #{$colto}
   grid-row: #{$rowfrom} / #{$rowto}
 
+@mixin mozaic-size($wid, $hei, $marg, $dis, $gridgap)
+  width: #{$wid} 
+  height: #{$hei}
+  margin: #{$marg}
+  display: #{$dis}
+  grid-gap: #{$gridgap}
+
 @mixin grid-template($coltemp, $colnum, $colwid, $rowtemp, $rownum, $rowwid)
   grid-template-columns: #{$coltemp}( ( #{$colnum}, #{$colwid}) )
   grid-template-rows: #{$rowtemp}( ( #{$rownum}, #{$rowwid}) )
 
+@mixin image($wid, $hei, $objfit)
+  width: #{$wid}
+  height: #{$hei}
+  object-fit: #{$objfit}
+
 .mozaic
-  width: 60vw
-  height: auto
-  margin: auto
-  display: grid
+  @include mozaic-size(60vw , auto , auto , grid , 1vw )
   @include grid-template(repeat, 1, 40vw, repeat, 9, 20vw)
-  grid-gap: 1vw
 
   @media (min-width: 768px)
     &
@@ -122,17 +130,11 @@
         @include grid-item(2, 4, 6, 6)
 
   &__image
-    width: 100%
-    height: 100%
-    object-fit: cover
+    @include image(100% , 100% , cover )
 
 .mozaic-2
-  width: 60vw
-  height: auto
-  margin: auto
-  display: grid
+  @include mozaic-size(60vw , auto , auto , grid , 1vw )
   @include grid-template(repeat, 1, 40vw, repeat, 6, 20vw)
-  grid-gap: 1vw
 
   @media (min-width: 768px)
     &
@@ -209,17 +211,11 @@
         @include grid-item(1, 3, 4, 4)
 
   &__image
-    width: 100%
-    height: 100%
-    object-fit: cover
+    @include image(100% , 100% , cover )
 
 .mozaic-3
-  width: 60vw
-  height: auto
-  margin: auto
-  display: grid
+  @include mozaic-size(60vw , auto , auto , grid , 1vw )
   @include grid-template(repeat, 1, 40vw, repeat, 3, 20vw)
-  grid-gap: 1vw
 
   @media (min-width: 768px)
     &
@@ -263,6 +259,4 @@
         @include grid-item(2, 4, 2, 2)
 
   &__image
-    width: 100%
-    height: 100%
-    object-fit: cover
+    @include image(100% , 100% , cover )

@@ -174,9 +174,9 @@ h2 {
   height: auto;
   margin: auto;
   display: grid;
+  grid-gap: 1vw;
   grid-template-columns: repeat(1, 40vw);
   grid-template-rows: repeat(9, 20vw);
-  grid-gap: 1vw;
 }
 @media (min-width: 768px) {
   .mozaic {
@@ -345,9 +345,9 @@ h2 {
   height: auto;
   margin: auto;
   display: grid;
+  grid-gap: 1vw;
   grid-template-columns: repeat(1, 40vw);
   grid-template-rows: repeat(6, 20vw);
-  grid-gap: 1vw;
 }
 @media (min-width: 768px) {
   .mozaic-2 {
@@ -468,9 +468,9 @@ h2 {
   height: auto;
   margin: auto;
   display: grid;
+  grid-gap: 1vw;
   grid-template-columns: repeat(1, 40vw);
   grid-template-rows: repeat(3, 20vw);
-  grid-gap: 1vw;
 }
 @media (min-width: 768px) {
   .mozaic-3 {
